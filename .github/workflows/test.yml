@@ -15,6 +15,6 @@ jobs:
         with:
           node-version: "20"
       - name: Installing dependencies
-        run: npm ci
+        run: npm install
       - name: Running all tests
         run: npm test
