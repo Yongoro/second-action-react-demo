@@ -16,5 +16,5 @@ jobs:
           node-version: "20"
       - name: Installing dependencies
         run: npm ci
-      - name: Running tests
+      - name: Running all tests
         run: npm test
