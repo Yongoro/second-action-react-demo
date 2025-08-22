@@ -1,9 +1,9 @@
 name: Testing The Project
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   pull_request:
-    branches: [main]
+    branches: [master, main]
 jobs:
   Testing:
     runs-on: ubuntu-latest
@@ -15,6 +15,6 @@ jobs:
         with:
           node-version: "20"
       - name: Installing dependencies
-        run: npm install
+        run: npm ci
       - name: Running all tests
         run: npm test
